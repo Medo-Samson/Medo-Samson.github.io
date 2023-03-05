@@ -7,24 +7,29 @@
 	<style>
 		* {
 		  box-sizing: border-box;
-		  scroll-padding-top: 50px;
-		}
-
-		body {
-		  margin: 0;
 		}
 		
+		body {
+		  margin: 0px;
+		}
+				
 		img {
 		  object-fit: contain;
 		  height: 100%;
 		  width: 100%;
 		}
-
-		/* Style the header */
-		.header {
-		  background-color: #f1f1f1;
-		  padding: 20px;
-		  text-align: center;
+		
+		table {
+		  border: 1px solid black;
+		  border-collapse: collapse;
+		  width: 30%;
+		  float: left;
+		  margin: 5px;
+		}
+		
+		td {
+		  border: 1px solid black;
+		  padding: 15px;
 		}
 
 		/* Style the top navigation bar */
@@ -52,21 +57,28 @@
 		  background-color: #ddd;
 		  color: black;
 		}
+		
+		.content {
+			padding-top: 25px;
+			padding-bottom: 25px;
+			margin-left: 15%;
+			margin-right: 15%;
+			line-height: 25px;
+		}
+		
+		.aTable {
+			color:black;
+		}
 	</style>
 </head>
 
 <body>
-<!--	<div class="header">
-	  <h1>Header</h1>
-	</div>-->
-
 	<div class="topnav">
 	  <a href="#home">Home</a>
 	  <a href="#problem">The Problem</a>
 	  <a href="#research">Research</a>
 	  <a href="#analysis">Analysis</a>
-	  <a href="#impl1">Implementation 1</a>
-	  <a href="#impl2">Implementation 2</a>
+	  <a href="#design">Final Design</a>
 	  <a href="#conclusion">Conclusion</a>
 	</div>
 	
@@ -74,98 +86,203 @@
 		<div style="width:50%;float:left;">
 			<image src="top-image.png" alt="MiniProject-Image">
 		</div>
-		<div style="width:50%;float:left;padding:50px;">
-			<h1 align="center"><br>Case Study: Designing for the Elderly</h1>
-			<h3 align="center"><br>By:<br><br></h3>
+		<div style="width:50%;float:left;padding:100px;">
+			<h1 align="center"><br>Case Study:<br>Designing for the Elderly</h1>
+			<h3 align="center"><br>By:<br></h3>
 			<p align="center">
-				Samson Kaller  #40136815<br><br>
+				Samson Kaller #40136815<br><br>
 				Mohammed Al-Taiee<br><br>
 			</p>
 		</div>
 	</div>
 	
-	<div id="problem">
+	<div id="problem" class="content">
 		<h1 align="center">Understanding The Problem</h1>
-		<p>
-		
-		</p>
 	</div>
 
-	<div id="research">
+	<div id="research" class="content">
 		<h1 align="center">Research</h1>
 		<p>
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel est maximus, pharetra risus molestie, imperdiet diam. Suspendisse at erat tellus. Morbi sed mauris sit amet urna hendrerit dignissim. Sed at leo eget mi tempus finibus. Vivamus sapien arcu, vulputate non mollis eu, aliquam id nisi. In mattis urna vel nibh facilisis, et sagittis odio interdum. Suspendisse potenti. Sed faucibus, felis ac varius aliquet, augue dui gravida eros, vel tempus nunc metus eget purus. Pellentesque purus dui, sagittis nec metus eget, pharetra ullamcorper risus. Fusce mollis laoreet volutpat. Sed non egestas sapien. Aliquam vel diam est. Nam iaculis elit tortor, eget dictum mi tincidunt vitae.
-
-Aenean facilisis odio tellus, vitae iaculis nisl malesuada at. Maecenas ac scelerisque felis. Sed ac felis commodo, hendrerit elit vel, consequat ligula. Curabitur faucibus nisl et nunc semper tincidunt pretium a magna. Cras a diam scelerisque eros semper aliquam. Ut viverra ullamcorper egestas. Nam maximus malesuada vehicula. Mauris interdum suscipit malesuada.
-
-Maecenas suscipit, ligula non viverra sollicitudin, justo tellus tincidunt elit, et dignissim felis nibh id neque. Suspendisse nec diam ut nunc rutrum tincidunt. Morbi eleifend, dolor et euismod suscipit, purus nibh consequat eros, sed fringilla erat purus eget odio. Aenean vel ligula efficitur mi rutrum ornare quis et felis. Integer justo orci, dictum et velit sed, pellentesque tincidunt ex. Vestibulum quis ante blandit, commodo libero non, posuere dolor. Vivamus euismod felis nisl.
-
-Etiam aliquet augue nunc, sed pellentesque est pretium eget. Duis venenatis tincidunt tortor, id facilisis eros pretium ac. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam pharetra ultrices eros id pretium. Nullam aliquet porta lorem, a sagittis quam finibus ut. Sed ullamcorper molestie tellus, pulvinar volutpat lacus interdum nec. Donec porta et lectus quis lacinia. Maecenas in velit ligula. Nunc volutpat varius turpis eget fringilla. Morbi lectus velit, porta sed feugiat a, mollis eget nibh. Quisque pharetra orci et bibendum dignissim. Sed enim felis, fringilla eu semper et, viverra et elit. Nam scelerisque lectus ac mi mattis, eget mollis nisl lobortis. Nulla facilisi.
-
-Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed sit amet fringilla quam. Ut molestie turpis eu justo bibendum sodales ut in tellus. Sed sit amet lorem tempus, suscipit leo id, blandit est. Mauris eget vestibulum lectus. Nulla molestie condimentum quam, in lobortis metus sodales ac. Donec blandit lorem suscipit ipsum pellentesque vestibulum. Donec semper ante nec purus aliquam bibendum. Cras accumsan nisl libero. Pellentesque scelerisque tempor nisl, sed dapibus dolor pretium condimentum. Donec viverra rutrum vehicula.
+		There are many applications already on the market for staying in 
+		shape, whether it's for physical exercise or for promoting mental 
+		health.<br>
+		Some of the apps available are even specifically targeted for users 
+		in a senior age group, and doing a little research on the current market 
+		and having a good notion of what's already out there can provide 
+		invaluable ideas for developing our app.
 		</p>
+		<h2>Current Market</h2>
+		<p><em>
+			A quick look at the pros and cons of 3 apps already on the market. Click tables to follow a link to a relevant site for the app.
+		</em></p>
+		<div>
+			<a class="aTable" href="https://www.facebook.com">
+			<table>
+				<tr>
+					<th>Facebook</th>
+				</tr>
+				<tr>
+					<td>
+						Social networking app that allows people to stay 
+						connected with friends/family, and many more additional 
+						features.
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<b>Pros</b>
+						<ul>
+							<li>Good chat features</li>
+							<li>Custom events/activities for groups</li>
+							<li>Wide variety of games</li>
+							<li>Mobile/Desktop site and app</li>
+						</ul>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<b>Cons</b><br>
+						<ul>
+							<li>Not specifically geared towards mental/physical health of the elderly</li>
+							<li>Many more “brainless fun” games than brain-training/puzzle games</li>
+							<li>Quantity and variety of app features might be hard for seniors to navigate</li>
+						</ul>
+					</td>
+				</tr>
+			</table>
+			</a>
+			<a class="aTable" href="https://apps.apple.com/us/app/pillboxie/id417367089">
+			<table>
+				<tr>
+					<th>Pillboxie</th>
+				</tr>
+				<tr>
+					<td>
+						“A classic medication reminder app trusted by thousands 
+						of people” [Pillboxie on the Apple Store]. Reviewed by 
+						physicians, designed by a registered nurse.
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<b>Pros</b>
+						<ul>
+							<li>Nice GUI with pill bottles and labels</li>
+							<li>Allows to visually organize a virtual pill cabinet</li>
+							<li>Reminder features, overall simple to use</li>
+							<li>Mobile app, does not need WiFi</li>
+						</ul>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<b>Cons</b><br>
+						<ul>
+							<li>One specific function, tracking medications</li>
+							<li>Looks more like a game than a health app</li>
+							<li>Some reviews of problems with alarms for medications</li>
+						</ul>
+					</td>
+				</tr>
+			</table>
+			</a>
+			<a class="aTable" href="https://apps.appfollow.io/ios/tai-chi-for-seniors-pro/577042546?country=us">
+			<table>
+				<tr>
+					<th>Tai Chi For Seniors</th>
+				</tr>
+				<tr>
+					<td>
+						64 Tai Chi videos from 4 angles with step-by-step 
+						detailed instructions from a Tai Chi master. For seniors 
+						trying to improve their health or learn/practice Tai Chi 
+						in a harmonious place.
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<b>Pros</b>
+						<ul>
+							<li>Good for meditation</li>
+							<li>Good for physical health too (flexibility, muscle strength, balance, …)</li>
+							<li>Specifically created for seniors</li>
+							<li>64 Instructional Videos</li>
+							<li>Mobile App, needs WiFi</li>
+						</ul>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<b>Cons</b><br>
+						<ul>
+							<li>Only 1 activity. More variety would be great for those who don’t like Tai Chi</li>
+							<li>More geared towards seniors who still have full mobility and can do the exercises</li>
+							<li>Problems with videos, only some available, most locked</li>
+						</ul>
+					</td>
+				</tr>
+			</table>
+			</a>
+		</div>
+		<h2 style="clear:both">Survey Data</h2>
+		<p>
+		Surveys are a great tool for collecting user data, which can help 
+		identify features and influence the UI design of the app. After doing 
+		market research and thinking about the problem a bit, we came up with 
+		the following <a href="Survey.pdf">survey</a>. The data collected 
+		from the surveys is essential to creating the user personas, journey 
+		maps, etc. contained in the following sections.<br>
+		For now, the following graphs illustrate the results of our surveys.
+		</p>
+		<image src="graphs.png">
+		<h2>User Goals</h2>
+		<p>
+		The market research gave us a glimpse of the wealth of applications 
+		existing today for the senior user. Other examples include games like 
+		"Brain Fit" (designed to keep old minds active) and "Ten Percent Happier" 
+		(helps seniors through isolation/stress with meditations). A common 
+		point to all these apps is helping seniors with aspects of their lives 
+		like their physical and mental well-being.<br>
+		By analysing what these apps have to offer, as well as the surveys our team 
+		sent out to seniors, we have identified some important User Goals for
+		app features that could help them to stay connected, active and healthy.<br>
+		A point-form summary of these goals is provided below, and we believe an app
+		with all these features could have a positive impact on their lives by fostering 
+		both mental and phycial well-being as well as engaging seniors socially.
+		</p>
+		<h3>Important User Goals:</h3>
+		<ul>
+			<li>Being able to access and play games like sudoku so that the brain is active (mental wellness).</li>
+			<li>For their mental wellbeing, the user should be able to set up mediation sessions where they can relax and take a break.</li>
+			<li>The user should be able to set up meetings either online or in-person to play games like chess to encourage social interactions and to keep their brain active.</li>
+			<li>To stay physically fit, the user can set up daily exercises that target different areas.</li>
+			<li>The user can book group training/activities with other seniors from the neighbourhood or care home like walking, running, etc to encourage interaction and physical wellness.</li>
+			<li>The user can book group activities like: classes (painting classes), games (bingo), movie/gaming nights and even field trips (museum trips). </li>
+			<li>The user should have a personal section where they can connect with their doctor/nurse/therapist to see what they need to do, to contact them, book appointments and even have reminders (e.g. calendar).</li>
+		</ul>
 	</div>
 
-	<div id="analysis">
+	<div id="analysis" class="content">
 		<h1 align="center">Analysis</h1>
+		<h2>User Personas</h2>
+		<h2>Empathy Map</h2>
+		<h2>Journey Map</h2>
+		<h2>Storyboard</h2>
+		<h2>User Flowchart</h2>
+		<h2>Sketches</h2>
+		<h2>Wireframes</h2>		
+	</div>
+	
+	<div id="design" class="content">
+		<h1 align="center">Final Design</h1>
+		<h2>Color Choices</h2>
+		<h2>Font</h2>
 		<p>
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel est maximus, pharetra risus molestie, imperdiet diam. Suspendisse at erat tellus. Morbi sed mauris sit amet urna hendrerit dignissim. Sed at leo eget mi tempus finibus. Vivamus sapien arcu, vulputate non mollis eu, aliquam id nisi. In mattis urna vel nibh facilisis, et sagittis odio interdum. Suspendisse potenti. Sed faucibus, felis ac varius aliquet, augue dui gravida eros, vel tempus nunc metus eget purus. Pellentesque purus dui, sagittis nec metus eget, pharetra ullamcorper risus. Fusce mollis laoreet volutpat. Sed non egestas sapien. Aliquam vel diam est. Nam iaculis elit tortor, eget dictum mi tincidunt vitae.
-
-Aenean facilisis odio tellus, vitae iaculis nisl malesuada at. Maecenas ac scelerisque felis. Sed ac felis commodo, hendrerit elit vel, consequat ligula. Curabitur faucibus nisl et nunc semper tincidunt pretium a magna. Cras a diam scelerisque eros semper aliquam. Ut viverra ullamcorper egestas. Nam maximus malesuada vehicula. Mauris interdum suscipit malesuada.
-
-Maecenas suscipit, ligula non viverra sollicitudin, justo tellus tincidunt elit, et dignissim felis nibh id neque. Suspendisse nec diam ut nunc rutrum tincidunt. Morbi eleifend, dolor et euismod suscipit, purus nibh consequat eros, sed fringilla erat purus eget odio. Aenean vel ligula efficitur mi rutrum ornare quis et felis. Integer justo orci, dictum et velit sed, pellentesque tincidunt ex. Vestibulum quis ante blandit, commodo libero non, posuere dolor. Vivamus euismod felis nisl.
-
-Etiam aliquet augue nunc, sed pellentesque est pretium eget. Duis venenatis tincidunt tortor, id facilisis eros pretium ac. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam pharetra ultrices eros id pretium. Nullam aliquet porta lorem, a sagittis quam finibus ut. Sed ullamcorper molestie tellus, pulvinar volutpat lacus interdum nec. Donec porta et lectus quis lacinia. Maecenas in velit ligula. Nunc volutpat varius turpis eget fringilla. Morbi lectus velit, porta sed feugiat a, mollis eget nibh. Quisque pharetra orci et bibendum dignissim. Sed enim felis, fringilla eu semper et, viverra et elit. Nam scelerisque lectus ac mi mattis, eget mollis nisl lobortis. Nulla facilisi.
-
-Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed sit amet fringilla quam. Ut molestie turpis eu justo bibendum sodales ut in tellus. Sed sit amet lorem tempus, suscipit leo id, blandit est. Mauris eget vestibulum lectus. Nulla molestie condimentum quam, in lobortis metus sodales ac. Donec blandit lorem suscipit ipsum pellentesque vestibulum. Donec semper ante nec purus aliquam bibendum. Cras accumsan nisl libero. Pellentesque scelerisque tempor nisl, sed dapibus dolor pretium condimentum. Donec viverra rutrum vehicula.
 		</p>
 	</div>
 	
-	<div id="impl1">
-		<h1 align="center">Implementation 1</h1>
-		<h2 align="center">Mohammed & Samson</h2>
-		<p>
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel est maximus, pharetra risus molestie, imperdiet diam. Suspendisse at erat tellus. Morbi sed mauris sit amet urna hendrerit dignissim. Sed at leo eget mi tempus finibus. Vivamus sapien arcu, vulputate non mollis eu, aliquam id nisi. In mattis urna vel nibh facilisis, et sagittis odio interdum. Suspendisse potenti. Sed faucibus, felis ac varius aliquet, augue dui gravida eros, vel tempus nunc metus eget purus. Pellentesque purus dui, sagittis nec metus eget, pharetra ullamcorper risus. Fusce mollis laoreet volutpat. Sed non egestas sapien. Aliquam vel diam est. Nam iaculis elit tortor, eget dictum mi tincidunt vitae.
-
-Aenean facilisis odio tellus, vitae iaculis nisl malesuada at. Maecenas ac scelerisque felis. Sed ac felis commodo, hendrerit elit vel, consequat ligula. Curabitur faucibus nisl et nunc semper tincidunt pretium a magna. Cras a diam scelerisque eros semper aliquam. Ut viverra ullamcorper egestas. Nam maximus malesuada vehicula. Mauris interdum suscipit malesuada.
-
-Maecenas suscipit, ligula non viverra sollicitudin, justo tellus tincidunt elit, et dignissim felis nibh id neque. Suspendisse nec diam ut nunc rutrum tincidunt. Morbi eleifend, dolor et euismod suscipit, purus nibh consequat eros, sed fringilla erat purus eget odio. Aenean vel ligula efficitur mi rutrum ornare quis et felis. Integer justo orci, dictum et velit sed, pellentesque tincidunt ex. Vestibulum quis ante blandit, commodo libero non, posuere dolor. Vivamus euismod felis nisl.
-
-Etiam aliquet augue nunc, sed pellentesque est pretium eget. Duis venenatis tincidunt tortor, id facilisis eros pretium ac. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam pharetra ultrices eros id pretium. Nullam aliquet porta lorem, a sagittis quam finibus ut. Sed ullamcorper molestie tellus, pulvinar volutpat lacus interdum nec. Donec porta et lectus quis lacinia. Maecenas in velit ligula. Nunc volutpat varius turpis eget fringilla. Morbi lectus velit, porta sed feugiat a, mollis eget nibh. Quisque pharetra orci et bibendum dignissim. Sed enim felis, fringilla eu semper et, viverra et elit. Nam scelerisque lectus ac mi mattis, eget mollis nisl lobortis. Nulla facilisi.
-
-Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed sit amet fringilla quam. Ut molestie turpis eu justo bibendum sodales ut in tellus. Sed sit amet lorem tempus, suscipit leo id, blandit est. Mauris eget vestibulum lectus. Nulla molestie condimentum quam, in lobortis metus sodales ac. Donec blandit lorem suscipit ipsum pellentesque vestibulum. Donec semper ante nec purus aliquam bibendum. Cras accumsan nisl libero. Pellentesque scelerisque tempor nisl, sed dapibus dolor pretium condimentum. Donec viverra rutrum vehicula.
-		</p>
-	</div>
-
-	<div id="impl2">
-		<h1 align="center">Implementation 2</h1>
-		<h2 align="center">Adam & Stefan</h2>
-		<p>
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel est maximus, pharetra risus molestie, imperdiet diam. Suspendisse at erat tellus. Morbi sed mauris sit amet urna hendrerit dignissim. Sed at leo eget mi tempus finibus. Vivamus sapien arcu, vulputate non mollis eu, aliquam id nisi. In mattis urna vel nibh facilisis, et sagittis odio interdum. Suspendisse potenti. Sed faucibus, felis ac varius aliquet, augue dui gravida eros, vel tempus nunc metus eget purus. Pellentesque purus dui, sagittis nec metus eget, pharetra ullamcorper risus. Fusce mollis laoreet volutpat. Sed non egestas sapien. Aliquam vel diam est. Nam iaculis elit tortor, eget dictum mi tincidunt vitae.
-
-Aenean facilisis odio tellus, vitae iaculis nisl malesuada at. Maecenas ac scelerisque felis. Sed ac felis commodo, hendrerit elit vel, consequat ligula. Curabitur faucibus nisl et nunc semper tincidunt pretium a magna. Cras a diam scelerisque eros semper aliquam. Ut viverra ullamcorper egestas. Nam maximus malesuada vehicula. Mauris interdum suscipit malesuada.
-
-Maecenas suscipit, ligula non viverra sollicitudin, justo tellus tincidunt elit, et dignissim felis nibh id neque. Suspendisse nec diam ut nunc rutrum tincidunt. Morbi eleifend, dolor et euismod suscipit, purus nibh consequat eros, sed fringilla erat purus eget odio. Aenean vel ligula efficitur mi rutrum ornare quis et felis. Integer justo orci, dictum et velit sed, pellentesque tincidunt ex. Vestibulum quis ante blandit, commodo libero non, posuere dolor. Vivamus euismod felis nisl.
-
-Etiam aliquet augue nunc, sed pellentesque est pretium eget. Duis venenatis tincidunt tortor, id facilisis eros pretium ac. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam pharetra ultrices eros id pretium. Nullam aliquet porta lorem, a sagittis quam finibus ut. Sed ullamcorper molestie tellus, pulvinar volutpat lacus interdum nec. Donec porta et lectus quis lacinia. Maecenas in velit ligula. Nunc volutpat varius turpis eget fringilla. Morbi lectus velit, porta sed feugiat a, mollis eget nibh. Quisque pharetra orci et bibendum dignissim. Sed enim felis, fringilla eu semper et, viverra et elit. Nam scelerisque lectus ac mi mattis, eget mollis nisl lobortis. Nulla facilisi.
-
-Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed sit amet fringilla quam. Ut molestie turpis eu justo bibendum sodales ut in tellus. Sed sit amet lorem tempus, suscipit leo id, blandit est. Mauris eget vestibulum lectus. Nulla molestie condimentum quam, in lobortis metus sodales ac. Donec blandit lorem suscipit ipsum pellentesque vestibulum. Donec semper ante nec purus aliquam bibendum. Cras accumsan nisl libero. Pellentesque scelerisque tempor nisl, sed dapibus dolor pretium condimentum. Donec viverra rutrum vehicula.
-		</p>
-	</div>
-	
-	<div id="conclusion">
+	<div id="conclusion" class="content">
 		<h1 align="center">Conclusion</h1>
-		<p>
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel est maximus, pharetra risus molestie, imperdiet diam. Suspendisse at erat tellus. Morbi sed mauris sit amet urna hendrerit dignissim. Sed at leo eget mi tempus finibus. Vivamus sapien arcu, vulputate non mollis eu, aliquam id nisi. In mattis urna vel nibh facilisis, et sagittis odio interdum. Suspendisse potenti. Sed faucibus, felis ac varius aliquet, augue dui gravida eros, vel tempus nunc metus eget purus. Pellentesque purus dui, sagittis nec metus eget, pharetra ullamcorper risus. Fusce mollis laoreet volutpat. Sed non egestas sapien. Aliquam vel diam est. Nam iaculis elit tortor, eget dictum mi tincidunt vitae.
-
-Aenean facilisis odio tellus, vitae iaculis nisl malesuada at. Maecenas ac scelerisque felis. Sed ac felis commodo, hendrerit elit vel, consequat ligula. Curabitur faucibus nisl et nunc semper tincidunt pretium a magna. Cras a diam scelerisque eros semper aliquam. Ut viverra ullamcorper egestas. Nam maximus malesuada vehicula. Mauris interdum suscipit malesuada.
-
-Maecenas suscipit, ligula non viverra sollicitudin, justo tellus tincidunt elit, et dignissim felis nibh id neque. Suspendisse nec diam ut nunc rutrum tincidunt. Morbi eleifend, dolor et euismod suscipit, purus nibh consequat eros, sed fringilla erat purus eget odio. Aenean vel ligula efficitur mi rutrum ornare quis et felis. Integer justo orci, dictum et velit sed, pellentesque tincidunt ex. Vestibulum quis ante blandit, commodo libero non, posuere dolor. Vivamus euismod felis nisl.
-
-Etiam aliquet augue nunc, sed pellentesque est pretium eget. Duis venenatis tincidunt tortor, id facilisis eros pretium ac. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam pharetra ultrices eros id pretium. Nullam aliquet porta lorem, a sagittis quam finibus ut. Sed ullamcorper molestie tellus, pulvinar volutpat lacus interdum nec. Donec porta et lectus quis lacinia. Maecenas in velit ligula. Nunc volutpat varius turpis eget fringilla. Morbi lectus velit, porta sed feugiat a, mollis eget nibh. Quisque pharetra orci et bibendum dignissim. Sed enim felis, fringilla eu semper et, viverra et elit. Nam scelerisque lectus ac mi mattis, eget mollis nisl lobortis. Nulla facilisi.
-
-Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed sit amet fringilla quam. Ut molestie turpis eu justo bibendum sodales ut in tellus. Sed sit amet lorem tempus, suscipit leo id, blandit est. Mauris eget vestibulum lectus. Nulla molestie condimentum quam, in lobortis metus sodales ac. Donec blandit lorem suscipit ipsum pellentesque vestibulum. Donec semper ante nec purus aliquam bibendum. Cras accumsan nisl libero. Pellentesque scelerisque tempor nisl, sed dapibus dolor pretium condimentum. Donec viverra rutrum vehicula.
-		</p>
 	</div>
 	
 </body>
